@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -101,6 +102,29 @@ namespace RestoManagSys
         }
 
         private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnInventory_Click(object sender, EventArgs e)
+        {
+            panel5.Visible = true;
+            panelinv.Visible = true;
+            panel4.Visible = false;
+            panelReceipt.Visible = false;
+
+
+
+        }
+
+        private void btnOrder_Click(object sender, EventArgs e)
+        {
+            panel4.Visible = true;
+            panel5.Visible = false;
+            panelinv.Visible=false;
+        }
+
+        private void button11_Click(object sender, EventArgs e)
         {
 
         }

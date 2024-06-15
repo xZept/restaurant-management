@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnInventory = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.btnOrder = new System.Windows.Forms.Button();
@@ -41,9 +41,45 @@
             this.button2 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panelinv = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.lblCroissant = new System.Windows.Forms.Label();
+            this.lblDonut = new System.Windows.Forms.Label();
+            this.lblBurger = new System.Windows.Forms.Label();
+            this.lblLasagna = new System.Windows.Forms.Label();
+            this.lblSpaghetti = new System.Windows.Forms.Label();
+            this.lblCoffee = new System.Windows.Forms.Label();
+            this.lblPuff = new System.Windows.Forms.Label();
+            this.lbllemonade = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.panelReceipt = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.btnRemoveHot = new System.Windows.Forms.Button();
+            this.btnRemoveBurger = new System.Windows.Forms.Button();
+            this.btnRemoveCroissant = new System.Windows.Forms.Button();
+            this.btnRemoveLasagna = new System.Windows.Forms.Button();
+            this.btnRemoveCream = new System.Windows.Forms.Button();
+            this.btnRemoveGlazed = new System.Windows.Forms.Button();
+            this.btnRemoveSpag = new System.Windows.Forms.Button();
             this.btnRemoveLemon = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -64,19 +100,21 @@
             this.imgLemon = new System.Windows.Forms.PictureBox();
             this.btnCream = new System.Windows.Forms.Button();
             this.btnLemon = new System.Windows.Forms.Button();
-            this.btnRemoveSpag = new System.Windows.Forms.Button();
-            this.btnRemoveGlazed = new System.Windows.Forms.Button();
-            this.btnRemoveCream = new System.Windows.Forms.Button();
-            this.btnRemoveLasagna = new System.Windows.Forms.Button();
-            this.btnRemoveCroissant = new System.Windows.Forms.Button();
-            this.btnRemoveBurger = new System.Windows.Forms.Button();
-            this.btnRemoveHot = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            this.panelReceipt.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgCrossaint)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgDonut)).BeginInit();
@@ -91,7 +129,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.panel2.Controls.Add(this.button4);
+            this.panel2.Controls.Add(this.btnInventory);
             this.panel2.Controls.Add(this.button3);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.btnOrder);
@@ -103,20 +141,21 @@
             this.panel2.TabIndex = 11;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // button4
+            // btnInventory
             // 
-            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.btnInventory.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button4.BackColor = System.Drawing.Color.White;
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button4.Font = new System.Drawing.Font("Perpetua", 13.74545F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(809, 23);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(137, 71);
-            this.button4.TabIndex = 10;
-            this.button4.Text = "INVENTORY";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnInventory.BackColor = System.Drawing.Color.White;
+            this.btnInventory.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnInventory.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnInventory.Font = new System.Drawing.Font("Perpetua", 13.74545F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInventory.Location = new System.Drawing.Point(809, 23);
+            this.btnInventory.Name = "btnInventory";
+            this.btnInventory.Size = new System.Drawing.Size(137, 71);
+            this.btnInventory.TabIndex = 10;
+            this.btnInventory.Text = "INVENTORY";
+            this.btnInventory.UseVisualStyleBackColor = false;
+            this.btnInventory.Click += new System.EventHandler(this.btnInventory_Click);
             // 
             // button3
             // 
@@ -154,6 +193,7 @@
             this.btnOrder.TabIndex = 2;
             this.btnOrder.Text = "ORDER";
             this.btnOrder.UseVisualStyleBackColor = false;
+            this.btnOrder.Click += new System.EventHandler(this.btnOrder_Click);
             // 
             // btnHome
             // 
@@ -233,7 +273,9 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.panel1.Controls.Add(this.panelinv);
             this.panel1.Controls.Add(this.panel5);
+            this.panel1.Controls.Add(this.panelReceipt);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(0, 149);
@@ -241,14 +283,332 @@
             this.panel1.Size = new System.Drawing.Size(1940, 950);
             this.panel1.TabIndex = 12;
             // 
+            // panelinv
+            // 
+            this.panelinv.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.panelinv.Location = new System.Drawing.Point(1553, 16);
+            this.panelinv.Name = "panelinv";
+            this.panelinv.Size = new System.Drawing.Size(315, 872);
+            this.panelinv.TabIndex = 11;
+            // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.panel5.Controls.Add(this.label5);
-            this.panel5.Location = new System.Drawing.Point(1553, 268);
+            this.panel5.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel5.Controls.Add(this.lblCroissant);
+            this.panel5.Controls.Add(this.lblDonut);
+            this.panel5.Controls.Add(this.lblBurger);
+            this.panel5.Controls.Add(this.lblLasagna);
+            this.panel5.Controls.Add(this.lblSpaghetti);
+            this.panel5.Controls.Add(this.lblCoffee);
+            this.panel5.Controls.Add(this.lblPuff);
+            this.panel5.Controls.Add(this.lbllemonade);
+            this.panel5.Controls.Add(this.button4);
+            this.panel5.Controls.Add(this.button5);
+            this.panel5.Controls.Add(this.button6);
+            this.panel5.Controls.Add(this.button7);
+            this.panel5.Controls.Add(this.button8);
+            this.panel5.Controls.Add(this.button9);
+            this.panel5.Controls.Add(this.button10);
+            this.panel5.Controls.Add(this.button11);
+            this.panel5.Controls.Add(this.label6);
+            this.panel5.Controls.Add(this.label7);
+            this.panel5.Controls.Add(this.label8);
+            this.panel5.Controls.Add(this.pictureBox2);
+            this.panel5.Controls.Add(this.pictureBox3);
+            this.panel5.Controls.Add(this.pictureBox5);
+            this.panel5.Controls.Add(this.pictureBox6);
+            this.panel5.Controls.Add(this.pictureBox7);
+            this.panel5.Controls.Add(this.pictureBox8);
+            this.panel5.Controls.Add(this.pictureBox9);
+            this.panel5.Controls.Add(this.pictureBox10);
+            this.panel5.Location = new System.Drawing.Point(38, 16);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(315, 580);
-            this.panel5.TabIndex = 10;
+            this.panel5.Size = new System.Drawing.Size(1509, 872);
+            this.panel5.TabIndex = 41;
+            // 
+            // lblCroissant
+            // 
+            this.lblCroissant.AutoSize = true;
+            this.lblCroissant.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCroissant.Location = new System.Drawing.Point(1361, 461);
+            this.lblCroissant.Name = "lblCroissant";
+            this.lblCroissant.Size = new System.Drawing.Size(103, 30);
+            this.lblCroissant.TabIndex = 48;
+            this.lblCroissant.Text = "Croissant";
+            // 
+            // lblDonut
+            // 
+            this.lblDonut.AutoSize = true;
+            this.lblDonut.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDonut.Location = new System.Drawing.Point(1361, 164);
+            this.lblDonut.Name = "lblDonut";
+            this.lblDonut.Size = new System.Drawing.Size(75, 30);
+            this.lblDonut.TabIndex = 47;
+            this.lblDonut.Text = "Donut";
+            // 
+            // lblBurger
+            // 
+            this.lblBurger.AutoSize = true;
+            this.lblBurger.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBurger.Location = new System.Drawing.Point(821, 610);
+            this.lblBurger.Name = "lblBurger";
+            this.lblBurger.Size = new System.Drawing.Size(79, 30);
+            this.lblBurger.TabIndex = 46;
+            this.lblBurger.Text = "Burger";
+            // 
+            // lblLasagna
+            // 
+            this.lblLasagna.AutoSize = true;
+            this.lblLasagna.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLasagna.Location = new System.Drawing.Point(821, 374);
+            this.lblLasagna.Name = "lblLasagna";
+            this.lblLasagna.Size = new System.Drawing.Size(92, 30);
+            this.lblLasagna.TabIndex = 45;
+            this.lblLasagna.Text = "Lasagna";
+            // 
+            // lblSpaghetti
+            // 
+            this.lblSpaghetti.AutoSize = true;
+            this.lblSpaghetti.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSpaghetti.Location = new System.Drawing.Point(821, 139);
+            this.lblSpaghetti.Name = "lblSpaghetti";
+            this.lblSpaghetti.Size = new System.Drawing.Size(108, 30);
+            this.lblSpaghetti.TabIndex = 44;
+            this.lblSpaghetti.Text = "Spaghetti";
+            // 
+            // lblCoffee
+            // 
+            this.lblCoffee.AutoSize = true;
+            this.lblCoffee.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCoffee.Location = new System.Drawing.Point(218, 612);
+            this.lblCoffee.Name = "lblCoffee";
+            this.lblCoffee.Size = new System.Drawing.Size(120, 30);
+            this.lblCoffee.TabIndex = 43;
+            this.lblCoffee.Text = "Hot Coffee";
+            // 
+            // lblPuff
+            // 
+            this.lblPuff.AutoSize = true;
+            this.lblPuff.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPuff.Location = new System.Drawing.Point(218, 374);
+            this.lblPuff.Name = "lblPuff";
+            this.lblPuff.Size = new System.Drawing.Size(117, 30);
+            this.lblPuff.TabIndex = 42;
+            this.lblPuff.Text = "CreamPuff";
+            // 
+            // lbllemonade
+            // 
+            this.lbllemonade.AutoSize = true;
+            this.lbllemonade.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbllemonade.Location = new System.Drawing.Point(218, 123);
+            this.lbllemonade.Name = "lbllemonade";
+            this.lbllemonade.Size = new System.Drawing.Size(115, 30);
+            this.lbllemonade.TabIndex = 41;
+            this.lbllemonade.Text = "Lemonade";
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.button4.Font = new System.Drawing.Font("Showcard Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(235, 685);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(78, 36);
+            this.button4.TabIndex = 40;
+            this.button4.Text = "-";
+            this.button4.UseVisualStyleBackColor = false;
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.button5.Font = new System.Drawing.Font("Showcard Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Location = new System.Drawing.Point(819, 679);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(79, 36);
+            this.button5.TabIndex = 38;
+            this.button5.Text = "-";
+            this.button5.UseVisualStyleBackColor = false;
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.button6.Font = new System.Drawing.Font("Showcard Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Location = new System.Drawing.Point(1381, 527);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(78, 36);
+            this.button6.TabIndex = 36;
+            this.button6.Text = "-";
+            this.button6.UseVisualStyleBackColor = false;
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.button7.Font = new System.Drawing.Font("Showcard Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.Location = new System.Drawing.Point(826, 434);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(72, 36);
+            this.button7.TabIndex = 34;
+            this.button7.Text = "-";
+            this.button7.UseVisualStyleBackColor = false;
+            // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.button8.Font = new System.Drawing.Font("Showcard Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.Location = new System.Drawing.Point(231, 435);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(82, 36);
+            this.button8.TabIndex = 32;
+            this.button8.Text = "-";
+            this.button8.UseVisualStyleBackColor = false;
+            // 
+            // button9
+            // 
+            this.button9.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.button9.Font = new System.Drawing.Font("Showcard Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.Location = new System.Drawing.Point(1381, 229);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(82, 36);
+            this.button9.TabIndex = 30;
+            this.button9.Text = "-";
+            this.button9.UseVisualStyleBackColor = false;
+            // 
+            // button10
+            // 
+            this.button10.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.button10.Font = new System.Drawing.Font("Showcard Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button10.Location = new System.Drawing.Point(826, 206);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(76, 36);
+            this.button10.TabIndex = 28;
+            this.button10.Text = "-";
+            this.button10.UseVisualStyleBackColor = false;
+            // 
+            // button11
+            // 
+            this.button11.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.button11.Font = new System.Drawing.Font("Showcard Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button11.Location = new System.Drawing.Point(232, 174);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(81, 36);
+            this.button11.TabIndex = 19;
+            this.button11.Text = "-";
+            this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Niagara Solid", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(1124, 28);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(172, 68);
+            this.label6.TabIndex = 18;
+            this.label6.Text = "DESSERT";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Niagara Solid", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(541, 37);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(236, 68);
+            this.label7.TabIndex = 17;
+            this.label7.Text = "MAIN COURSE";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Niagara Solid", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(70, 22);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(143, 68);
+            this.label8.TabIndex = 16;
+            this.label8.Text = "DRINKS";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(1092, 461);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(217, 172);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 9;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(1071, 164);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(248, 172);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 8;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(529, 139);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(248, 167);
+            this.pictureBox5.TabIndex = 7;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(541, 374);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(222, 167);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox6.TabIndex = 6;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(541, 610);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(199, 167);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox7.TabIndex = 5;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
+            this.pictureBox8.Location = new System.Drawing.Point(64, 611);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(130, 151);
+            this.pictureBox8.TabIndex = 4;
+            this.pictureBox8.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
+            this.pictureBox9.Location = new System.Drawing.Point(82, 375);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(106, 151);
+            this.pictureBox9.TabIndex = 3;
+            this.pictureBox9.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
+            this.pictureBox10.Location = new System.Drawing.Point(82, 124);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(112, 151);
+            this.pictureBox10.TabIndex = 2;
+            this.pictureBox10.TabStop = false;
+            // 
+            // panelReceipt
+            // 
+            this.panelReceipt.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.panelReceipt.Controls.Add(this.label5);
+            this.panelReceipt.Location = new System.Drawing.Point(1553, 268);
+            this.panelReceipt.Name = "panelReceipt";
+            this.panelReceipt.Size = new System.Drawing.Size(315, 580);
+            this.panelReceipt.TabIndex = 10;
             // 
             // label5
             // 
@@ -256,7 +616,7 @@
             this.label5.Font = new System.Drawing.Font("Showcard Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(97, 359);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(161, 35);
+            this.label5.Size = new System.Drawing.Size(138, 30);
             this.label5.TabIndex = 0;
             this.label5.Text = "(RECEIPT)";
             this.label5.Click += new System.EventHandler(this.label5_Click);
@@ -297,6 +657,83 @@
             this.panel4.TabIndex = 9;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
+            // btnRemoveHot
+            // 
+            this.btnRemoveHot.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btnRemoveHot.Font = new System.Drawing.Font("Showcard Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRemoveHot.Location = new System.Drawing.Point(223, 698);
+            this.btnRemoveHot.Name = "btnRemoveHot";
+            this.btnRemoveHot.Size = new System.Drawing.Size(78, 36);
+            this.btnRemoveHot.TabIndex = 40;
+            this.btnRemoveHot.Text = "-";
+            this.btnRemoveHot.UseVisualStyleBackColor = false;
+            // 
+            // btnRemoveBurger
+            // 
+            this.btnRemoveBurger.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btnRemoveBurger.Font = new System.Drawing.Font("Showcard Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRemoveBurger.Location = new System.Drawing.Point(744, 684);
+            this.btnRemoveBurger.Name = "btnRemoveBurger";
+            this.btnRemoveBurger.Size = new System.Drawing.Size(79, 36);
+            this.btnRemoveBurger.TabIndex = 38;
+            this.btnRemoveBurger.Text = "-";
+            this.btnRemoveBurger.UseVisualStyleBackColor = false;
+            // 
+            // btnRemoveCroissant
+            // 
+            this.btnRemoveCroissant.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btnRemoveCroissant.Font = new System.Drawing.Font("Showcard Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRemoveCroissant.Location = new System.Drawing.Point(1244, 540);
+            this.btnRemoveCroissant.Name = "btnRemoveCroissant";
+            this.btnRemoveCroissant.Size = new System.Drawing.Size(78, 36);
+            this.btnRemoveCroissant.TabIndex = 36;
+            this.btnRemoveCroissant.Text = "-";
+            this.btnRemoveCroissant.UseVisualStyleBackColor = false;
+            // 
+            // btnRemoveLasagna
+            // 
+            this.btnRemoveLasagna.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btnRemoveLasagna.Font = new System.Drawing.Font("Showcard Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRemoveLasagna.Location = new System.Drawing.Point(767, 462);
+            this.btnRemoveLasagna.Name = "btnRemoveLasagna";
+            this.btnRemoveLasagna.Size = new System.Drawing.Size(72, 36);
+            this.btnRemoveLasagna.TabIndex = 34;
+            this.btnRemoveLasagna.Text = "-";
+            this.btnRemoveLasagna.UseVisualStyleBackColor = false;
+            // 
+            // btnRemoveCream
+            // 
+            this.btnRemoveCream.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btnRemoveCream.Font = new System.Drawing.Font("Showcard Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRemoveCream.Location = new System.Drawing.Point(219, 462);
+            this.btnRemoveCream.Name = "btnRemoveCream";
+            this.btnRemoveCream.Size = new System.Drawing.Size(82, 36);
+            this.btnRemoveCream.TabIndex = 32;
+            this.btnRemoveCream.Text = "-";
+            this.btnRemoveCream.UseVisualStyleBackColor = false;
+            // 
+            // btnRemoveGlazed
+            // 
+            this.btnRemoveGlazed.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btnRemoveGlazed.Font = new System.Drawing.Font("Showcard Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRemoveGlazed.Location = new System.Drawing.Point(1254, 249);
+            this.btnRemoveGlazed.Name = "btnRemoveGlazed";
+            this.btnRemoveGlazed.Size = new System.Drawing.Size(82, 36);
+            this.btnRemoveGlazed.TabIndex = 30;
+            this.btnRemoveGlazed.Text = "-";
+            this.btnRemoveGlazed.UseVisualStyleBackColor = false;
+            // 
+            // btnRemoveSpag
+            // 
+            this.btnRemoveSpag.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btnRemoveSpag.Font = new System.Drawing.Font("Showcard Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRemoveSpag.Location = new System.Drawing.Point(778, 224);
+            this.btnRemoveSpag.Name = "btnRemoveSpag";
+            this.btnRemoveSpag.Size = new System.Drawing.Size(76, 36);
+            this.btnRemoveSpag.TabIndex = 28;
+            this.btnRemoveSpag.Text = "-";
+            this.btnRemoveSpag.UseVisualStyleBackColor = false;
+            // 
             // btnRemoveLemon
             // 
             this.btnRemoveLemon.BackColor = System.Drawing.SystemColors.ActiveBorder;
@@ -314,7 +751,7 @@
             this.label4.Font = new System.Drawing.Font("Niagara Solid", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(1024, 13);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(193, 78);
+            this.label4.Size = new System.Drawing.Size(172, 68);
             this.label4.TabIndex = 18;
             this.label4.Text = "DESSERT";
             // 
@@ -324,7 +761,7 @@
             this.label2.Font = new System.Drawing.Font("Niagara Solid", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(510, 22);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(262, 78);
+            this.label2.Size = new System.Drawing.Size(236, 68);
             this.label2.TabIndex = 17;
             this.label2.Text = "MAIN COURSE";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -335,7 +772,7 @@
             this.label1.Font = new System.Drawing.Font("Niagara Solid", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(70, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(161, 78);
+            this.label1.Size = new System.Drawing.Size(143, 68);
             this.label1.TabIndex = 16;
             this.label1.Text = "DRINKS";
             // 
@@ -507,86 +944,9 @@
             this.btnLemon.UseVisualStyleBackColor = false;
             this.btnLemon.Click += new System.EventHandler(this.button5_Click);
             // 
-            // btnRemoveSpag
+            // MainWindow
             // 
-            this.btnRemoveSpag.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.btnRemoveSpag.Font = new System.Drawing.Font("Showcard Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRemoveSpag.Location = new System.Drawing.Point(778, 224);
-            this.btnRemoveSpag.Name = "btnRemoveSpag";
-            this.btnRemoveSpag.Size = new System.Drawing.Size(76, 36);
-            this.btnRemoveSpag.TabIndex = 28;
-            this.btnRemoveSpag.Text = "-";
-            this.btnRemoveSpag.UseVisualStyleBackColor = false;
-            // 
-            // btnRemoveGlazed
-            // 
-            this.btnRemoveGlazed.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.btnRemoveGlazed.Font = new System.Drawing.Font("Showcard Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRemoveGlazed.Location = new System.Drawing.Point(1254, 249);
-            this.btnRemoveGlazed.Name = "btnRemoveGlazed";
-            this.btnRemoveGlazed.Size = new System.Drawing.Size(82, 36);
-            this.btnRemoveGlazed.TabIndex = 30;
-            this.btnRemoveGlazed.Text = "-";
-            this.btnRemoveGlazed.UseVisualStyleBackColor = false;
-            // 
-            // btnRemoveCream
-            // 
-            this.btnRemoveCream.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.btnRemoveCream.Font = new System.Drawing.Font("Showcard Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRemoveCream.Location = new System.Drawing.Point(219, 462);
-            this.btnRemoveCream.Name = "btnRemoveCream";
-            this.btnRemoveCream.Size = new System.Drawing.Size(82, 36);
-            this.btnRemoveCream.TabIndex = 32;
-            this.btnRemoveCream.Text = "-";
-            this.btnRemoveCream.UseVisualStyleBackColor = false;
-            // 
-            // btnRemoveLasagna
-            // 
-            this.btnRemoveLasagna.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.btnRemoveLasagna.Font = new System.Drawing.Font("Showcard Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRemoveLasagna.Location = new System.Drawing.Point(767, 462);
-            this.btnRemoveLasagna.Name = "btnRemoveLasagna";
-            this.btnRemoveLasagna.Size = new System.Drawing.Size(72, 36);
-            this.btnRemoveLasagna.TabIndex = 34;
-            this.btnRemoveLasagna.Text = "-";
-            this.btnRemoveLasagna.UseVisualStyleBackColor = false;
-            // 
-            // btnRemoveCroissant
-            // 
-            this.btnRemoveCroissant.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.btnRemoveCroissant.Font = new System.Drawing.Font("Showcard Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRemoveCroissant.Location = new System.Drawing.Point(1244, 540);
-            this.btnRemoveCroissant.Name = "btnRemoveCroissant";
-            this.btnRemoveCroissant.Size = new System.Drawing.Size(78, 36);
-            this.btnRemoveCroissant.TabIndex = 36;
-            this.btnRemoveCroissant.Text = "-";
-            this.btnRemoveCroissant.UseVisualStyleBackColor = false;
-            // 
-            // btnRemoveBurger
-            // 
-            this.btnRemoveBurger.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.btnRemoveBurger.Font = new System.Drawing.Font("Showcard Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRemoveBurger.Location = new System.Drawing.Point(744, 684);
-            this.btnRemoveBurger.Name = "btnRemoveBurger";
-            this.btnRemoveBurger.Size = new System.Drawing.Size(79, 36);
-            this.btnRemoveBurger.TabIndex = 38;
-            this.btnRemoveBurger.Text = "-";
-            this.btnRemoveBurger.UseVisualStyleBackColor = false;
-            // 
-            // btnRemoveHot
-            // 
-            this.btnRemoveHot.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.btnRemoveHot.Font = new System.Drawing.Font("Showcard Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRemoveHot.Location = new System.Drawing.Point(223, 698);
-            this.btnRemoveHot.Name = "btnRemoveHot";
-            this.btnRemoveHot.Size = new System.Drawing.Size(78, 36);
-            this.btnRemoveHot.TabIndex = 40;
-            this.btnRemoveHot.Text = "-";
-            this.btnRemoveHot.UseVisualStyleBackColor = false;
-            // 
-            // Form1
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(1924, 1058);
@@ -596,7 +956,7 @@
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Form1";
+            this.Name = "MainWindow";
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel2.ResumeLayout(false);
@@ -606,6 +966,16 @@
             this.panel1.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            this.panelReceipt.ResumeLayout(false);
+            this.panelReceipt.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgCrossaint)).EndInit();
@@ -633,35 +1003,64 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button btnLemon;
-        private System.Windows.Forms.Button btnCream;
-        private System.Windows.Forms.PictureBox imgCoffee;
-        private System.Windows.Forms.PictureBox imgCream;
-        private System.Windows.Forms.PictureBox imgLemon;
-        private System.Windows.Forms.PictureBox imgSpag;
-        private System.Windows.Forms.PictureBox imgLasagna;
-        private System.Windows.Forms.PictureBox imgBurger;
         private System.Windows.Forms.PictureBox imgDonut;
         private System.Windows.Forms.PictureBox imgCrossaint;
         private System.Windows.Forms.Button btnCroissant;
         private System.Windows.Forms.Button btnGlazed;
-        private System.Windows.Forms.Button btnBurger;
-        private System.Windows.Forms.Button btnLasagna;
-        private System.Windows.Forms.Button btnSpag;
-        private System.Windows.Forms.Button btnHot;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnRemoveLemon;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Button btnInventory;
+        private System.Windows.Forms.Panel panelReceipt;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button btnRemoveCroissant;
+        private System.Windows.Forms.Button btnRemoveGlazed;
         private System.Windows.Forms.Button btnRemoveHot;
         private System.Windows.Forms.Button btnRemoveBurger;
-        private System.Windows.Forms.Button btnRemoveCroissant;
+        private System.Windows.Forms.Button btnBurger;
+        private System.Windows.Forms.Button btnHot;
+        private System.Windows.Forms.PictureBox imgBurger;
+        private System.Windows.Forms.PictureBox imgCoffee;
         private System.Windows.Forms.Button btnRemoveLasagna;
         private System.Windows.Forms.Button btnRemoveCream;
-        private System.Windows.Forms.Button btnRemoveGlazed;
         private System.Windows.Forms.Button btnRemoveSpag;
+        private System.Windows.Forms.Button btnRemoveLemon;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnLasagna;
+        private System.Windows.Forms.Button btnSpag;
+        private System.Windows.Forms.PictureBox imgSpag;
+        private System.Windows.Forms.PictureBox imgLasagna;
+        private System.Windows.Forms.PictureBox imgCream;
+        private System.Windows.Forms.PictureBox imgLemon;
+        private System.Windows.Forms.Button btnCream;
+        private System.Windows.Forms.Button btnLemon;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.Label lblDonut;
+        private System.Windows.Forms.Label lblBurger;
+        private System.Windows.Forms.Label lblLasagna;
+        private System.Windows.Forms.Label lblSpaghetti;
+        private System.Windows.Forms.Label lblCoffee;
+        private System.Windows.Forms.Label lblPuff;
+        private System.Windows.Forms.Label lbllemonade;
+        private System.Windows.Forms.Label lblCroissant;
+        private System.Windows.Forms.Panel panelinv;
     }
 }
