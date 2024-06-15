@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\admin\\source\\repos\\restaurant-management\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6BCB2931-8F89-4E56-93E8-F3BCF30A444F}|RestoManagSys\\RestoManagSys.csproj|C:\\Users\\admin\\source\\repos\\restaurant-management\\restomanagsys\\mainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{6BCB2931-8F89-4E56-93E8-F3BCF30A444F}|RestoManagSys\\RestoManagSys.csproj|solutionrelative:restomanagsys\\mainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6BCB2931-8F89-4E56-93E8-F3BCF30A444F}|RestoManagSys\\RestoManagSys.csproj|C:\\Users\\admin\\source\\repos\\restaurant-management\\restomanagsys\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{6BCB2931-8F89-4E56-93E8-F3BCF30A444F}|RestoManagSys\\RestoManagSys.csproj|solutionrelative:restomanagsys\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6BCB2931-8F89-4E56-93E8-F3BCF30A444F}|RestoManagSys\\RestoManagSys.csproj|c:\\users\\admin\\source\\repos\\restaurant-management\\restomanagsys\\mainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6BCB2931-8F89-4E56-93E8-F3BCF30A444F}|RestoManagSys\\RestoManagSys.csproj|solutionrelative:restomanagsys\\mainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6BCB2931-8F89-4E56-93E8-F3BCF30A444F}|RestoManagSys\\RestoManagSys.csproj|C:\\Users\\admin\\source\\repos\\restaurant-management\\restomanagsys\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6BCB2931-8F89-4E56-93E8-F3BCF30A444F}|RestoManagSys\\RestoManagSys.csproj|solutionrelative:restomanagsys\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{6BCB2931-8F89-4E56-93E8-F3BCF30A444F}|RestoManagSys\\RestoManagSys.csproj|c:\\users\\admin\\source\\repos\\restaurant-management\\restomanagsys\\mainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6BCB2931-8F89-4E56-93E8-F3BCF30A444F}|RestoManagSys\\RestoManagSys.csproj|solutionrelative:restomanagsys\\mainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BCB2931-8F89-4E56-93E8-F3BCF30A444F}|RestoManagSys\\RestoManagSys.csproj|C:\\Users\\admin\\source\\repos\\restaurant-management\\restomanagsys\\mainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BCB2931-8F89-4E56-93E8-F3BCF30A444F}|RestoManagSys\\RestoManagSys.csproj|solutionrelative:restomanagsys\\mainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6BCB2931-8F89-4E56-93E8-F3BCF30A444F}|RestoManagSys\\RestoManagSys.csproj|C:\\Users\\admin\\source\\repos\\restaurant-management\\restomanagsys\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6BCB2931-8F89-4E56-93E8-F3BCF30A444F}|RestoManagSys\\RestoManagSys.csproj|solutionrelative:restomanagsys\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BCB2931-8F89-4E56-93E8-F3BCF30A444F}|RestoManagSys\\RestoManagSys.csproj|C:\\Users\\admin\\source\\repos\\restaurant-management\\restomanagsys\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6BCB2931-8F89-4E56-93E8-F3BCF30A444F}|RestoManagSys\\RestoManagSys.csproj|solutionrelative:restomanagsys\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6BCB2931-8F89-4E56-93E8-F3BCF30A444F}|RestoManagSys\\RestoManagSys.csproj|C:\\Users\\admin\\source\\repos\\restaurant-management\\restomanagsys\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -34,17 +34,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 444,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Register.cs",
               "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\restaurant-management\\RestoManagSys\\Register.cs",
               "RelativeDocumentMoniker": "RestoManagSys\\Register.cs",
               "ToolTip": "C:\\Users\\admin\\source\\repos\\restaurant-management\\RestoManagSys\\Register.cs",
               "RelativeToolTip": "RestoManagSys\\Register.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAgwCsAAAA8AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACsAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-15T06:14:11.344Z",
               "IsPinned": true,
@@ -52,7 +52,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "LogIn.cs",
               "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\restaurant-management\\RestoManagSys\\LogIn.cs",
               "RelativeDocumentMoniker": "RestoManagSys\\LogIn.cs",
@@ -61,11 +61,12 @@
               "ViewState": "AQIAAFAAAAAAAAAAAADwvwkAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-15T05:35:10.724Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Register.cs [Design]",
               "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\restaurant-management\\RestoManagSys\\Register.cs",
               "RelativeDocumentMoniker": "RestoManagSys\\Register.cs",
@@ -75,6 +76,14 @@
               "WhenOpened": "2024-06-15T05:58:35.179Z",
               "IsPinned": true,
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
@@ -91,7 +100,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MainWindow.cs [Design]",
               "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\restaurant-management\\RestoManagSys\\MainWindow.cs",
               "RelativeDocumentMoniker": "RestoManagSys\\MainWindow.cs",
@@ -110,7 +119,8 @@
               "ToolTip": "C:\\Users\\admin\\source\\repos\\restaurant-management\\RestoManagSys\\LogIn.cs [Design]",
               "RelativeToolTip": "RestoManagSys\\LogIn.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T05:26:28.062Z"
+              "WhenOpened": "2024-06-15T05:26:28.062Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }
