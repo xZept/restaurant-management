@@ -42,7 +42,18 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelinv = new System.Windows.Forms.Panel();
+            this.txtAddStock = new System.Windows.Forms.TextBox();
+            this.btnStock = new System.Windows.Forms.Button();
+            this.btnSetPrice = new System.Windows.Forms.Button();
+            this.lblPrice = new System.Windows.Forms.Label();
+            this.lblProdId = new System.Windows.Forms.Label();
+            this.txtPrice = new System.Windows.Forms.TextBox();
+            this.txtProdid = new System.Windows.Forms.TextBox();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.dataGridInventory = new System.Windows.Forms.DataGridView();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.lblCro = new System.Windows.Forms.Label();
+            this.lblDon = new System.Windows.Forms.Label();
             this.lblCroissant = new System.Windows.Forms.Label();
             this.lblDonut = new System.Windows.Forms.Label();
             this.lblBurger = new System.Windows.Forms.Label();
@@ -51,14 +62,8 @@
             this.lblCoffee = new System.Windows.Forms.Label();
             this.lblPuff = new System.Windows.Forms.Label();
             this.lbllemonade = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -100,11 +105,14 @@
             this.imgLemon = new System.Windows.Forms.PictureBox();
             this.btnCream = new System.Windows.Forms.Button();
             this.btnLemon = new System.Windows.Forms.Button();
+            this.lblStock = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
+            this.panelinv.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridInventory)).BeginInit();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -139,7 +147,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1940, 123);
             this.panel2.TabIndex = 11;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // btnInventory
             // 
@@ -155,7 +162,6 @@
             this.btnInventory.TabIndex = 10;
             this.btnInventory.Text = "INVENTORY";
             this.btnInventory.UseVisualStyleBackColor = false;
-            this.btnInventory.Click += new System.EventHandler(this.btnInventory_Click);
             // 
             // button3
             // 
@@ -209,7 +215,6 @@
             this.btnHome.TabIndex = 0;
             this.btnHome.Text = "HOME";
             this.btnHome.UseVisualStyleBackColor = false;
-            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // pictureBox4
             // 
@@ -286,14 +291,105 @@
             // panelinv
             // 
             this.panelinv.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.panelinv.Location = new System.Drawing.Point(1553, 16);
+            this.panelinv.Controls.Add(this.lblStock);
+            this.panelinv.Controls.Add(this.txtAddStock);
+            this.panelinv.Controls.Add(this.btnStock);
+            this.panelinv.Controls.Add(this.btnSetPrice);
+            this.panelinv.Controls.Add(this.lblPrice);
+            this.panelinv.Controls.Add(this.lblProdId);
+            this.panelinv.Controls.Add(this.txtPrice);
+            this.panelinv.Controls.Add(this.txtProdid);
+            this.panelinv.Controls.Add(this.btnDelete);
+            this.panelinv.Controls.Add(this.dataGridInventory);
+            this.panelinv.Location = new System.Drawing.Point(1404, 16);
             this.panelinv.Name = "panelinv";
-            this.panelinv.Size = new System.Drawing.Size(315, 872);
+            this.panelinv.Size = new System.Drawing.Size(464, 872);
             this.panelinv.TabIndex = 11;
+            // 
+            // txtAddStock
+            // 
+            this.txtAddStock.Location = new System.Drawing.Point(180, 517);
+            this.txtAddStock.Name = "txtAddStock";
+            this.txtAddStock.Size = new System.Drawing.Size(142, 25);
+            this.txtAddStock.TabIndex = 9;
+            // 
+            // btnStock
+            // 
+            this.btnStock.Location = new System.Drawing.Point(180, 644);
+            this.btnStock.Name = "btnStock";
+            this.btnStock.Size = new System.Drawing.Size(75, 23);
+            this.btnStock.TabIndex = 8;
+            this.btnStock.Text = "Restock";
+            this.btnStock.UseVisualStyleBackColor = true;
+            this.btnStock.Click += new System.EventHandler(this.btnStock_Click);
+            // 
+            // btnSetPrice
+            // 
+            this.btnSetPrice.Location = new System.Drawing.Point(113, 600);
+            this.btnSetPrice.Name = "btnSetPrice";
+            this.btnSetPrice.Size = new System.Drawing.Size(75, 23);
+            this.btnSetPrice.TabIndex = 7;
+            this.btnSetPrice.Text = "Set Price";
+            this.btnSetPrice.UseVisualStyleBackColor = true;
+            this.btnSetPrice.Click += new System.EventHandler(this.btnSetPrice_Click);
+            // 
+            // lblPrice
+            // 
+            this.lblPrice.AutoSize = true;
+            this.lblPrice.Font = new System.Drawing.Font("Showcard Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrice.Location = new System.Drawing.Point(48, 471);
+            this.lblPrice.Name = "lblPrice";
+            this.lblPrice.Size = new System.Drawing.Size(50, 17);
+            this.lblPrice.TabIndex = 6;
+            this.lblPrice.Text = "Price:";
+            // 
+            // lblProdId
+            // 
+            this.lblProdId.AutoSize = true;
+            this.lblProdId.Font = new System.Drawing.Font("Showcard Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProdId.Location = new System.Drawing.Point(48, 428);
+            this.lblProdId.Name = "lblProdId";
+            this.lblProdId.Size = new System.Drawing.Size(95, 17);
+            this.lblProdId.TabIndex = 5;
+            this.lblProdId.Text = "Product ID:";
+            // 
+            // txtPrice
+            // 
+            this.txtPrice.Location = new System.Drawing.Point(180, 468);
+            this.txtPrice.Name = "txtPrice";
+            this.txtPrice.Size = new System.Drawing.Size(142, 25);
+            this.txtPrice.TabIndex = 4;
+            // 
+            // txtProdid
+            // 
+            this.txtProdid.Location = new System.Drawing.Point(180, 425);
+            this.txtProdid.Name = "txtProdid";
+            this.txtProdid.Size = new System.Drawing.Size(142, 25);
+            this.txtProdid.TabIndex = 3;
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Location = new System.Drawing.Point(223, 600);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(75, 23);
+            this.btnDelete.TabIndex = 2;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // dataGridInventory
+            // 
+            this.dataGridInventory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridInventory.Location = new System.Drawing.Point(3, 3);
+            this.dataGridInventory.Name = "dataGridInventory";
+            this.dataGridInventory.Size = new System.Drawing.Size(460, 363);
+            this.dataGridInventory.TabIndex = 0;
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel5.Controls.Add(this.lblCro);
+            this.panel5.Controls.Add(this.lblDon);
             this.panel5.Controls.Add(this.lblCroissant);
             this.panel5.Controls.Add(this.lblDonut);
             this.panel5.Controls.Add(this.lblBurger);
@@ -302,14 +398,8 @@
             this.panel5.Controls.Add(this.lblCoffee);
             this.panel5.Controls.Add(this.lblPuff);
             this.panel5.Controls.Add(this.lbllemonade);
-            this.panel5.Controls.Add(this.button4);
-            this.panel5.Controls.Add(this.button5);
             this.panel5.Controls.Add(this.button6);
-            this.panel5.Controls.Add(this.button7);
-            this.panel5.Controls.Add(this.button8);
             this.panel5.Controls.Add(this.button9);
-            this.panel5.Controls.Add(this.button10);
-            this.panel5.Controls.Add(this.button11);
             this.panel5.Controls.Add(this.label6);
             this.panel5.Controls.Add(this.label7);
             this.panel5.Controls.Add(this.label8);
@@ -323,8 +413,28 @@
             this.panel5.Controls.Add(this.pictureBox10);
             this.panel5.Location = new System.Drawing.Point(38, 16);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1509, 872);
+            this.panel5.Size = new System.Drawing.Size(1376, 872);
             this.panel5.TabIndex = 41;
+            // 
+            // lblCro
+            // 
+            this.lblCro.AutoSize = true;
+            this.lblCro.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCro.Location = new System.Drawing.Point(1195, 527);
+            this.lblCro.Name = "lblCro";
+            this.lblCro.Size = new System.Drawing.Size(103, 30);
+            this.lblCro.TabIndex = 50;
+            this.lblCro.Text = "Croissant";
+            // 
+            // lblDon
+            // 
+            this.lblDon.AutoSize = true;
+            this.lblDon.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDon.Location = new System.Drawing.Point(1195, 192);
+            this.lblDon.Name = "lblDon";
+            this.lblDon.Size = new System.Drawing.Size(75, 30);
+            this.lblDon.TabIndex = 49;
+            this.lblDon.Text = "Donut";
             // 
             // lblCroissant
             // 
@@ -350,7 +460,7 @@
             // 
             this.lblBurger.AutoSize = true;
             this.lblBurger.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBurger.Location = new System.Drawing.Point(821, 610);
+            this.lblBurger.Location = new System.Drawing.Point(722, 664);
             this.lblBurger.Name = "lblBurger";
             this.lblBurger.Size = new System.Drawing.Size(79, 30);
             this.lblBurger.TabIndex = 46;
@@ -360,7 +470,7 @@
             // 
             this.lblLasagna.AutoSize = true;
             this.lblLasagna.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLasagna.Location = new System.Drawing.Point(821, 374);
+            this.lblLasagna.Location = new System.Drawing.Point(715, 442);
             this.lblLasagna.Name = "lblLasagna";
             this.lblLasagna.Size = new System.Drawing.Size(92, 30);
             this.lblLasagna.TabIndex = 45;
@@ -370,7 +480,7 @@
             // 
             this.lblSpaghetti.AutoSize = true;
             this.lblSpaghetti.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSpaghetti.Location = new System.Drawing.Point(821, 139);
+            this.lblSpaghetti.Location = new System.Drawing.Point(716, 188);
             this.lblSpaghetti.Name = "lblSpaghetti";
             this.lblSpaghetti.Size = new System.Drawing.Size(108, 30);
             this.lblSpaghetti.TabIndex = 44;
@@ -380,7 +490,7 @@
             // 
             this.lblCoffee.AutoSize = true;
             this.lblCoffee.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCoffee.Location = new System.Drawing.Point(218, 612);
+            this.lblCoffee.Location = new System.Drawing.Point(223, 676);
             this.lblCoffee.Name = "lblCoffee";
             this.lblCoffee.Size = new System.Drawing.Size(120, 30);
             this.lblCoffee.TabIndex = 43;
@@ -390,7 +500,7 @@
             // 
             this.lblPuff.AutoSize = true;
             this.lblPuff.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPuff.Location = new System.Drawing.Point(218, 374);
+            this.lblPuff.Location = new System.Drawing.Point(223, 429);
             this.lblPuff.Name = "lblPuff";
             this.lblPuff.Size = new System.Drawing.Size(117, 30);
             this.lblPuff.TabIndex = 42;
@@ -400,33 +510,11 @@
             // 
             this.lbllemonade.AutoSize = true;
             this.lbllemonade.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbllemonade.Location = new System.Drawing.Point(218, 123);
+            this.lbllemonade.Location = new System.Drawing.Point(223, 180);
             this.lbllemonade.Name = "lbllemonade";
             this.lbllemonade.Size = new System.Drawing.Size(115, 30);
             this.lbllemonade.TabIndex = 41;
             this.lbllemonade.Text = "Lemonade";
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.button4.Font = new System.Drawing.Font("Showcard Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(235, 685);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(78, 36);
-            this.button4.TabIndex = 40;
-            this.button4.Text = "-";
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.button5.Font = new System.Drawing.Font("Showcard Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(819, 679);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(79, 36);
-            this.button5.TabIndex = 38;
-            this.button5.Text = "-";
-            this.button5.UseVisualStyleBackColor = false;
             // 
             // button6
             // 
@@ -439,28 +527,6 @@
             this.button6.Text = "-";
             this.button6.UseVisualStyleBackColor = false;
             // 
-            // button7
-            // 
-            this.button7.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.button7.Font = new System.Drawing.Font("Showcard Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(826, 434);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(72, 36);
-            this.button7.TabIndex = 34;
-            this.button7.Text = "-";
-            this.button7.UseVisualStyleBackColor = false;
-            // 
-            // button8
-            // 
-            this.button8.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.button8.Font = new System.Drawing.Font("Showcard Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(231, 435);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(82, 36);
-            this.button8.TabIndex = 32;
-            this.button8.Text = "-";
-            this.button8.UseVisualStyleBackColor = false;
-            // 
             // button9
             // 
             this.button9.BackColor = System.Drawing.SystemColors.ActiveBorder;
@@ -472,34 +538,11 @@
             this.button9.Text = "-";
             this.button9.UseVisualStyleBackColor = false;
             // 
-            // button10
-            // 
-            this.button10.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.button10.Font = new System.Drawing.Font("Showcard Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.Location = new System.Drawing.Point(826, 206);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(76, 36);
-            this.button10.TabIndex = 28;
-            this.button10.Text = "-";
-            this.button10.UseVisualStyleBackColor = false;
-            // 
-            // button11
-            // 
-            this.button11.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.button11.Font = new System.Drawing.Font("Showcard Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.Location = new System.Drawing.Point(232, 174);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(81, 36);
-            this.button11.TabIndex = 19;
-            this.button11.Text = "-";
-            this.button11.UseVisualStyleBackColor = false;
-            this.button11.Click += new System.EventHandler(this.button11_Click);
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Niagara Solid", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(1124, 28);
+            this.label6.Location = new System.Drawing.Point(946, 38);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(172, 68);
             this.label6.TabIndex = 18;
@@ -509,7 +552,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Niagara Solid", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(541, 37);
+            this.label7.Location = new System.Drawing.Point(436, 38);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(236, 68);
             this.label7.TabIndex = 17;
@@ -528,60 +571,66 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(1092, 461);
+            this.pictureBox2.Location = new System.Drawing.Point(931, 461);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(217, 172);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 9;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(1071, 164);
+            this.pictureBox3.Location = new System.Drawing.Point(910, 139);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(248, 172);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 8;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(529, 139);
+            this.pictureBox5.Location = new System.Drawing.Point(424, 140);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(248, 167);
             this.pictureBox5.TabIndex = 7;
             this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(541, 374);
+            this.pictureBox6.Location = new System.Drawing.Point(436, 375);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(222, 167);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox6.TabIndex = 6;
             this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
             // pictureBox7
             // 
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(541, 610);
+            this.pictureBox7.Location = new System.Drawing.Point(436, 611);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(199, 167);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox7.TabIndex = 5;
             this.pictureBox7.TabStop = false;
+            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
             // 
             // pictureBox8
             // 
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(64, 611);
+            this.pictureBox8.Location = new System.Drawing.Point(65, 611);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(130, 151);
+            this.pictureBox8.Size = new System.Drawing.Size(129, 151);
             this.pictureBox8.TabIndex = 4;
             this.pictureBox8.TabStop = false;
+            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click_1);
             // 
             // pictureBox9
             // 
@@ -591,6 +640,7 @@
             this.pictureBox9.Size = new System.Drawing.Size(106, 151);
             this.pictureBox9.TabIndex = 3;
             this.pictureBox9.TabStop = false;
+            this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
             // 
             // pictureBox10
             // 
@@ -600,6 +650,7 @@
             this.pictureBox10.Size = new System.Drawing.Size(112, 151);
             this.pictureBox10.TabIndex = 2;
             this.pictureBox10.TabStop = false;
+            this.pictureBox10.Click += new System.EventHandler(this.pictureBox10_Click);
             // 
             // panelReceipt
             // 
@@ -619,7 +670,6 @@
             this.label5.Size = new System.Drawing.Size(138, 30);
             this.label5.TabIndex = 0;
             this.label5.Text = "(RECEIPT)";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // panel4
             // 
@@ -655,7 +705,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1402, 817);
             this.panel4.TabIndex = 9;
-            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // btnRemoveHot
             // 
@@ -764,7 +813,6 @@
             this.label2.Size = new System.Drawing.Size(236, 68);
             this.label2.TabIndex = 17;
             this.label2.Text = "MAIN COURSE";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -870,7 +918,6 @@
             this.imgSpag.Size = new System.Drawing.Size(248, 167);
             this.imgSpag.TabIndex = 7;
             this.imgSpag.TabStop = false;
-            this.imgSpag.Click += new System.EventHandler(this.pictureBox8_Click);
             // 
             // imgLasagna
             // 
@@ -881,7 +928,6 @@
             this.imgLasagna.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.imgLasagna.TabIndex = 6;
             this.imgLasagna.TabStop = false;
-            this.imgLasagna.Click += new System.EventHandler(this.pictureBox7_Click);
             // 
             // imgBurger
             // 
@@ -930,7 +976,6 @@
             this.btnCream.TabIndex = 1;
             this.btnCream.Text = "CREAMPUFF";
             this.btnCream.UseVisualStyleBackColor = false;
-            this.btnCream.Click += new System.EventHandler(this.button6_Click);
             // 
             // btnLemon
             // 
@@ -942,7 +987,16 @@
             this.btnLemon.TabIndex = 0;
             this.btnLemon.Text = "LEMON TEA";
             this.btnLemon.UseVisualStyleBackColor = false;
-            this.btnLemon.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // lblStock
+            // 
+            this.lblStock.AutoSize = true;
+            this.lblStock.Font = new System.Drawing.Font("Showcard Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStock.Location = new System.Drawing.Point(48, 517);
+            this.lblStock.Name = "lblStock";
+            this.lblStock.Size = new System.Drawing.Size(58, 17);
+            this.lblStock.TabIndex = 10;
+            this.lblStock.Text = "Stocks";
             // 
             // MainWindow
             // 
@@ -964,6 +1018,9 @@
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
+            this.panelinv.ResumeLayout(false);
+            this.panelinv.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridInventory)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -1034,14 +1091,8 @@
         private System.Windows.Forms.Button btnCream;
         private System.Windows.Forms.Button btnLemon;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
@@ -1062,5 +1113,17 @@
         private System.Windows.Forms.Label lbllemonade;
         private System.Windows.Forms.Label lblCroissant;
         private System.Windows.Forms.Panel panelinv;
+        private System.Windows.Forms.DataGridView dataGridInventory;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Label lblPrice;
+        private System.Windows.Forms.Label lblProdId;
+        private System.Windows.Forms.TextBox txtPrice;
+        private System.Windows.Forms.TextBox txtProdid;
+        private System.Windows.Forms.Button btnSetPrice;
+        private System.Windows.Forms.Button btnStock;
+        private System.Windows.Forms.TextBox txtAddStock;
+        private System.Windows.Forms.Label lblCro;
+        private System.Windows.Forms.Label lblDon;
+        private System.Windows.Forms.Label lblStock;
     }
 }
