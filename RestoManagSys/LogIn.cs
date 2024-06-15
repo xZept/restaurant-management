@@ -27,8 +27,8 @@ namespace RestoManagSys
             string username, password;
             string myUsername = "123";
             string myPassword = "123";
-            username = txtUserN.Text;
-            password = txtPass.Text;
+            username = txtUsername.Text;
+            password = txtPassword.Text;
 
             if ((username.Equals(myUsername)) && (password.Equals(myPassword)))
             {

@@ -20,3 +20,14 @@ E:\OOPFinals\restaurant-management\RestoManagSys\obj\Debug\RestoManagSys.csproj.
 E:\OOPFinals\restaurant-management\RestoManagSys\obj\Debug\RestoManagSys.csproj.CoreCompileInputs.cache
 E:\OOPFinals\restaurant-management\RestoManagSys\obj\Debug\RestoManagSys.exe
 E:\OOPFinals\restaurant-management\RestoManagSys\obj\Debug\RestoManagSys.pdb
+C:\Users\allen\Source\Repos\restaurant-management\RestoManagSys\bin\Debug\RestoManagSys.exe.config
+C:\Users\allen\Source\Repos\restaurant-management\RestoManagSys\bin\Debug\RestoManagSys.exe
+C:\Users\allen\Source\Repos\restaurant-management\RestoManagSys\bin\Debug\RestoManagSys.pdb
+C:\Users\allen\Source\Repos\restaurant-management\RestoManagSys\obj\Debug\RestoManagSys.csproj.AssemblyReference.cache
+C:\Users\allen\Source\Repos\restaurant-management\RestoManagSys\obj\Debug\RestoManagSys.Form1.resources
+C:\Users\allen\Source\Repos\restaurant-management\RestoManagSys\obj\Debug\RestoManagSys.LogIn.resources
+C:\Users\allen\Source\Repos\restaurant-management\RestoManagSys\obj\Debug\RestoManagSys.Properties.Resources.resources
+C:\Users\allen\Source\Repos\restaurant-management\RestoManagSys\obj\Debug\RestoManagSys.csproj.GenerateResource.cache
+C:\Users\allen\Source\Repos\restaurant-management\RestoManagSys\obj\Debug\RestoManagSys.csproj.CoreCompileInputs.cache
+C:\Users\allen\Source\Repos\restaurant-management\RestoManagSys\obj\Debug\RestoManagSys.exe
+C:\Users\allen\Source\Repos\restaurant-management\RestoManagSys\obj\Debug\RestoManagSys.pdb
