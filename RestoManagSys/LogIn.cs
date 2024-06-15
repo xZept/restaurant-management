@@ -32,7 +32,7 @@ namespace RestoManagSys
 
             if ((username.Equals(myUsername)) && (password.Equals(myPassword)))
             {
-                Form1 dboard  = new Form1();
+                MainWindow dboard  = new MainWindow();
                 dboard.Show();
                 Hide();
 
@@ -85,7 +85,9 @@ namespace RestoManagSys
 
         private void btnReg_Click(object sender, EventArgs e)
         {
-
+            // Open registration window
+            Register reg = new Register();
+            reg.Show();
         }
 
         private void label4_Click(object sender, EventArgs e)

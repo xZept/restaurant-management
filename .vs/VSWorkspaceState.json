@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\RestoManagSys"
   ],
-  "SelectedNode": "\\RestoManagSys.sln",
+  "SelectedNode": "\\RestoManagSys\\MainWindow.cs",
   "PreviewInSolutionExplorer": false
 }
