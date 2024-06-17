@@ -8,7 +8,6 @@ namespace RestoManagSys
 
 {
     public partial class MainWindow : Form
-
     {
         private MySqlConnection connect;
         public MainWindow()
